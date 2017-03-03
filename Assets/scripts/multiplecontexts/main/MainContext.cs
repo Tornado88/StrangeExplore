@@ -41,11 +41,11 @@ namespace strange.examples.multiplecontexts.main
 		}
 		
 		protected override void mapBindings()
-		{
+		{ 
 			//Any event that fire across the Context boundary get mapped here.
-			//crossContextBridge.Bind(MainEvent.GAME_COMPLETE);
-			//crossContextBridge.Bind(MainEvent.REMOVE_SOCIAL_CONTEXT);
-			//crossContextBridge.Bind(GameEvent.RESTART_GAME);
+			crossContextBridge.Bind(MainEvent.GAME_COMPLETE);
+			crossContextBridge.Bind(MainEvent.REMOVE_SOCIAL_CONTEXT);
+			crossContextBridge.Bind(GameEvent.RESTART_GAME);
 			
 			commandBinder.Bind(ContextEvent.START).To<StartCommand>().Once();
 			commandBinder.Bind(MainEvent.LOAD_SCENE).To<LoadSceneCommand>();
