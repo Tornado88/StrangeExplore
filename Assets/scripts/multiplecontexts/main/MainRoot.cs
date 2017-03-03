@@ -33,7 +33,7 @@ namespace strange.examples.multiplecontexts.main
 	
 		void Awake()
 		{
-			//Instantiate the context, passing it this instance.
+			//Instantiate the context, passing it this instance. lxl
 			context = new MainContext(this);
 		}
 	}
