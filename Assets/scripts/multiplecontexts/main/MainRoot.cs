@@ -31,7 +31,7 @@ namespace strange.examples.multiplecontexts.main
 	public class MainRoot : ContextView
 	{
 	
-		void Awake()  
+		void Awake()  lianglong
 		{
 			//Instantiate the context, passing it this instance. lxl
 			context = new MainContext(this);
